@@ -2,10 +2,8 @@ version: '3.5'
 
 services:
   freegpt-webui:
-    image: freegpt-webui
+    image: vinsmoke0819/freegpt-webui:20230629
+    restart: unless-stopped
     container_name: freegpt-webui
-    build:
-      context: .
-      dockerfile: Dockerfile
-    ports:
-      - "1338:1338"
+    #ports:
+    #  - "1338:1338"
